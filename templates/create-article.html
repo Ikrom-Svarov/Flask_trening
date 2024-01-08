@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавления статьи
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="container">
+<div class="container">
+<div class="container">
+<h1> Добавления статьи </h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название" ><br>
+        <textarea name="intro" id="intro" class="form-control"placeholder="Введите анонс"></textarea><br>
+        <textarea name="text" id="text" class="form-control"placeholder=" Введите основной текст "></textarea><br>
+        <button class="btn btn-success">Отправить</button>
+        <a href="{{ url_for('posts' ) }}" class="btn btn-secondary">Отмена</a>
+
+
+    </form>
+</div>    
+</div>    
+</div>    
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Подтверждение удаления 
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h1>Подтверждение удаления статьи {{article.title}}</h1>
+
+    <div class="alert alert-danger">
+        <p>Вы уверены, что хотите удалить статью "{{ article.title }}"?</p>
+
+        <form method="post" action="">
+            <button type="submit" class="btn btn-danger">Да, удалить</button>
+            <a href="{{ url_for('posts' ) }}" class="btn btn-secondary">Отмена</a>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
